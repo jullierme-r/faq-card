@@ -38,10 +38,6 @@ body {
 .container {
     background-color: #fff;
     border-radius: 1.5rem;
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; */
 }
 
 .img-content {
