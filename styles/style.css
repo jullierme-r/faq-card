@@ -43,7 +43,7 @@ body {
 .img-content {
     background-image: url('../images/bg-pattern-mobile.svg');
     background-repeat: no-repeat;
-    background-position: 6vh 0vh;
+    background-position: 50% 0;
 }
 
 .img-content #woman {
