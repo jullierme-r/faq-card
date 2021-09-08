@@ -19,7 +19,6 @@
     --lightGrayishBlue: #e7e7e9;
 }
 
-
 body {
     background-image: linear-gradient(to bottom, var(--softViolet), var(--softBlue));
     min-height: 100vh;
@@ -101,7 +100,6 @@ body {
     border-bottom: 1px solid var(--lightGrayishBlue);
     color: var(--darkGrayishBlue);
     height: 0;
-    /* margin: .5rem .9rem; */
     overflow: hidden;
     text-align: left;
 }
@@ -120,17 +118,19 @@ body {
 }
 
 .attribution a { 
-    color: #3e52a3; 
+    color: var(--lightGrayishBlue); 
 }
 
 @media screen and (min-width: 60rem) {
+    body {
+        flex-direction: column;
+    }
     .container {
         display: flex;
         background-image: url('../images/bg-pattern-desktop.svg') ;
         background-repeat: no-repeat;
         background-position: -200% center;
         background-size: 80%;
-        overflow: hidden;
     }
 
    #woman-mobile {
@@ -141,19 +141,24 @@ body {
        display: block;
        max-width: 27rem;
        position: relative;
-       top: 5.6rem;
+       top: 3.6rem;
        left: -4.5rem;
    }
 
    #box {
        display: block;
        position: absolute;
-       top: 13rem;
+       top: 11rem;
        left: -5.8rem;
        z-index: 5;
    }
 
+   .box-hover {
+       transform: translateX(-20%);
+   }
+
    .img-content, .main-content {
+       overflow: hidden;
        max-width: 28.75rem;
     }
 
