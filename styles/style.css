@@ -108,6 +108,7 @@ body {
     height: 0;
     overflow: hidden;
     text-align: left;
+    margin-right: 1.6rem;
     transition: var(--transition);
 }
 
